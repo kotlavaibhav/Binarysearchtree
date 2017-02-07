@@ -1,32 +1,14 @@
 #include <iostream>
 #include <cassert>
 #include <queue>
+#include "binarytree.h"
+
 using namespace std;
 
 struct node {
 	node *llink;
 	node *rlink;
 	int info;
-};
-
-class bst {
-public:
-	void insert(int item);
-	void deleteitem(int item);
-	bst();
-	void deletefromtree(node* &p);
-	void levelordertraversal(node* current);
-	void lot();
-	node* leastcommonancestor(node *current,int A,int B);
-	void lothelp(int A,int B);
-	void deleteall(node *p);
-	void deleteallhelper();
-	void deleteallleaves(node* current);
-	void deleteallleaves1();
-	int count1(node *p);
-	void counthelp();
-private:
-	node *root;
 };
 
 bst::bst() {
